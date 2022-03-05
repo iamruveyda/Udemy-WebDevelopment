@@ -1,0 +1,10 @@
+﻿.btn-primary {
+    background-color: #5B74A2;
+    border-color: #5B74A2;
+    border-style: solid;
+}
+
+    .btn-primary:focus {
+        outline: none;
+        box-shadow: none;
+    }
