@@ -31,35 +31,38 @@
 <hr>
 
 
-| Id | Chapters                                    |
-|----|---------------------------------------------|
-| 01 | HTML5: Bölüm 1                              |
-| 02 | HTML5: Bölüm 2                              |
-| 03 | CSS: Bölüm 1                                |
-| 04 | CSS: Bölüm 2                                |
-| 05 | CSS: Bölüm 3                                |
-| 06 | CSS: Bölüm 4                                |
-| 07 | CSS: Bölüm 5                                |
-| 08 | CSS: Bölüm 6                                |
-| 09 | CSS: Bölüm 7                                |
-| 10 | Bootstrap: Bölüm 1                          |
-| 11 | Bootstrap: Bölüm 2                          |
-| 12 | JavaScript - Giriş                          |
-| 13 | JavaScript - Değişkenler                    |
-| 14 | JavaScript - Operatörler                    |
-| 15 | JavaScript - Veri Yapıları                  |
-| 16 | JavaScript - Diziler                        |
-| 17 | JavaScript - Koşul İfadeleri                |
-| 18 | JavaScript - Döngüler                       |
-| 19 | JavaScript - Fonksiyonlar                   |
-| 20 | JavaScript - Events                         |
-| 21 | JavaScript - LocalStorage                   |
-| 22 | JavaScript - Dom Projesi: ToDo Uygulaması   |
-| 23 | JavaScript - Dom Projesi: Slider Uygulaması |
-| 24 | JQuery                                      |
-
-
-
+| Id | Chapters                                           | Folder             |
+|----|----------------------------------------------------|--------------------|
+| 01 | HTML5: Bölüm 1                                     |                    |
+| 02 | HTML5: Bölüm 2                                     |                    |
+| 03 | CSS: Bölüm 1                                       |                    |
+| 04 | CSS: Bölüm 2                                       |                    |
+| 05 | CSS: Bölüm 3                                       |                    |
+| 06 | CSS: Bölüm 4                                       |                    |
+| 07 | CSS: Bölüm 5                                       |                    |
+| 08 | CSS: Bölüm 6                                       |                    |
+| 09 | CSS: Bölüm 7                                       |                    |
+| 10 | Bootstrap: Bölüm 1                                 |                    |
+| 11 | Bootstrap: Bölüm 2                                 |                    |
+| 12 | JavaScript - Giriş                                 | JavaScriptTutorial |
+| 13 | JavaScript - Değişkenler                           | JavaScriptTutorial |
+| 14 | JavaScript - Operatörler                           | JavaScriptTutorial |
+| 15 | JavaScript - Veri Yapıları                         | JavaScriptTutorial |
+| 16 | JavaScript - Diziler                               | JavaScriptTutorial |
+| 17 | JavaScript - Koşul İfadeleri                       | JavaScriptTutorial |
+| 18 | JavaScript - Döngüler                              | JavaScriptTutorial |
+| 19 | JavaScript - Fonksiyonlar                          | JavaScriptTutorial |
+| 20 | JavaScript - Dom                                   | JavaScriptDom      |
+| 21 | JavaScript - Events                                | JavaScriptDom      |
+| 22 | JavaScript - LocalStorage                          | JavaScriptDom      |
+| 23 | JavaScript - Dom Projesi: ToDo Uygulaması          | JavaScriptDom      |
+| 24 | JavaScript - Dom Projesi: Slider Uygulaması        | JavaScriptDom      |
+| 25 | JQuery                                             |                    |
+| 26 | JavaScript - Nesne Tabanlı Programlama             | JavaScriptOOP      |
+| 27 | JavaScript - Hata Yönetimi                         | JavaScriptTutorial |
+| 28 | JavaScript - Quiz Uygulaması (Proje3)              | JavaScriptDom      |
+| 29 | JavaScript - Modern JavaScript Teknikleri ES6+/ES7 | JavaScriptTutorial |
+| 30 | JavaScript - Dinamik Kurs Projesi                  |                    |
 
 
 
