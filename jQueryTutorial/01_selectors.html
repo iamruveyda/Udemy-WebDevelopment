@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <!-- integrity: bir tarayıcının, kaynak değiştirilmişse kodun asla yüklenmediğinden emin olmak için
+    getirilen komut dosyasını kontrol etmesine izin verir.-->
+
+    <script src="jquery-3.2.1.min.js"></script>
+	
+</head>
+
+<body>
+
+<a href="#">link</a>
+
+<h3>JQuery Dersleri</h3>
+
+<ul id="liste">
+
+    <li class="item">JQuery Reference</li>
+    <li>Selectors <a href="#">link</a></li>
+    <li class="item">JQuery Plugins</li>
+
+</ul>
+
+<ul>
+    <li class="item">JQuery Reference</li>
+    <li>Selectors <a href="#">link</a></li>
+    <li class="item">JQuery Plugins</li>
+</ul>
+
+<script>
+
+    console.log($("#liste")); // belirli öğeyi bulmak için bir HTML etiketinin id niteliğini kullanır
+
+    console.log($("h3"));
+
+    console.log($("ul"));
+
+    console.log($("li"));
+
+    console.log($(".item")); // jQuery .class seçici, belirli bir sınıfa sahip öğeleri bulur.
+
+    console.log($("a"));
+
+    console.log($("li a"));
+
+    console.log($("ul li a"));
+
+    console.log($("#liste a"));
+
+</script>
+
+</body>
+
+</html>

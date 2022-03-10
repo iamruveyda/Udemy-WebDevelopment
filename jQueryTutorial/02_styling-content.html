@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    
+</head>
+
+<body>
+<a href="#">link</a>
+<h3 id="header">JQuery Tutorials</h3>
+<ul id="liste">
+    <li class="item">JQuery Reference</li>
+    <li>Selectors <a href="#">link</a></li>
+    <li class="item">JQuery Plugins</li>
+</ul>
+
+<script>
+
+    document.getElementById("header").style.color = "red";
+
+    $("#header").css("color", "blue");
+
+    $("#liste a").css("text-decoration", "none");
+    $("a").css("text-decoration", "none");
+
+
+    var styles = {
+        color: "orange",
+        fontSize: "20px",
+        border: "1px solid red"
+    };
+
+    $("ul li").css(styles);
+
+
+    var lists = document.querySelectorAll("li");
+
+    for (var i = 0; i < lists.length; i++) {
+        lists[i].style.color = "fuchsia";
+    }
+
+    $("a").css({
+        color: "yellow",
+        fontSize: "20px",
+        border: "1px solid blueviolet"
+
+    });
+
+    $(".item").css({
+        display: "none"
+    });
+
+</script>
+
+</body>
+
+</html>

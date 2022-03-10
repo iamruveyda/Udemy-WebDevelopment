@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+
+    <style>
+
+        #wrapper {
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        body {
+            font-size: 180%;
+        }
+
+        input {
+            padding: 15px;
+            font-size: 25px;
+            border-radius: 5px;
+            border: 1px solid grey;
+            width: 520px;
+        }
+
+        label {
+            display: inline-block;
+            width: 170px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 14px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        #error {
+            color: red;
+            text-align: left;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+
+        <div id="error">
+
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="text" name="email" id="email" placeholder="your email">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" placeholder="phone">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password" placeholder="password">
+        </div>
+
+        <div class="form-group">
+            <label for="repassword">Password Again</label>
+            <input type="text" name="repassword" id="repassword" placeholder="password again">
+        </div>
+
+        <button id="btn">Save</button>
+
+    </div>
+
+    <script>
+
+        $(function () {
+
+            function isEmail(email) {
+                const pattern = /^([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)@([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)[\\.]([a-zA-Z]{2,9})$/;
+                return pattern.test(email);
+            }
+
+            window.$("#btn").click(function () {
+
+                var errormessage = "";
+                window.$("#error").html("");
+
+                if (window.$("#email").val() === "") {
+                    errormessage += "<p>E-Mail is required.</p>";
+                }
+
+                if (isEmail(window.$("#email").val()) === false) {
+                    errormessage += "<p>E-Mail was not entered properly.</p>";
+                }
+
+                if (window.$.isNumeric(window.$("#phone").val()) === false) {
+                    errormessage += "<p>Phone field not entered properly</p>";
+                }
+
+                if (window.$("#phone").val() === "") {
+                    errormessage += "<p>Phone number is required.</p>";
+                }
+
+                if (window.$("#password").val() === "") {
+                    errormessage += "<p>Password is required.</p>";
+                }
+
+                if (window.$("#password").val() !== window.$("#repassword").val()) {
+                    errormessage += "<p>Your password is not synchronized.</p>";
+                }
+
+                if (errormessage !== "") {
+                    window.$("#error").html(errormessage);
+                }
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

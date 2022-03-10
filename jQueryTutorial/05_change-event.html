@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+
+<form>
+
+    <p>
+        Ad: <input class="control" type="text">
+    </p>
+    <p>
+        Hobiler:  <select class="control">
+            <option value="Swimming" selected="selected">Swimming</option>
+            <option value="Cinema">Cinema</option>
+        </select>
+    </p>
+
+</form>
+
+
+<script>
+
+    $(document).ready(function () {
+
+
+        $(".control").click(function () {
+
+            console.log($(this).val());
+
+        });
+    });
+
+</script>
+
+</body>
+
+</html>

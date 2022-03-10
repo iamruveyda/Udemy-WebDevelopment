@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <style>
+
+        .coloring {
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<p id="p1">Web Developer Eğitimi</p>
+
+<p id="p2">Web Developer Eğitimi</p>
+
+<p class="paragraph">Web Developer Eğitimi</p>
+
+<p class="paragraph">Web Developer Eğitimi</p>
+
+<script>
+
+    $(document).ready(function () {
+
+      window.$(".paragraph").click(function () {
+
+            window.$(this).addClass("coloring");
+
+        });
+    });
+
+</script>
+
+</body>
+
+</html>

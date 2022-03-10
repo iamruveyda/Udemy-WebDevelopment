@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+
+<p>Web Developer Course</p>
+
+<button id="fadein">Fade In</button>
+<button id="fadeout">Fade Out</button>
+<button id="fadeto">Fade to</button>
+
+<button id="toggle">Toggle</button>
+
+<script>
+
+    $(document).ready(function () {
+
+
+
+        window.$("#fadein").click(function () {
+
+            window.$("p").fadeIn("slow");
+
+        });
+
+        window.$("#fadeout").click(function () {
+
+            window.$("p").fadeOut(1000, function () {
+                alert("Paragraph shown.");
+            });
+
+        });
+
+        window.$("#fadeto").click(function () {
+
+            window.$("p").fadeTo("slow", 0);
+
+        });
+
+        window.$("#toggle").click(function () {
+
+            window.$("p").fadeToggle("slow");
+
+        });
+
+    });
+
+</script>
+
+</body>
+
+</html>
