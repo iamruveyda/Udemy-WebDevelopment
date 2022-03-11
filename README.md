@@ -66,7 +66,7 @@
 | 28 | JavaScript - Quiz Uygulaması (Proje3)                           | JavaScriptDom      |
 | 29 | JavaScript - Modern JavaScript Teknikleri ES6+/ES7              | JavaScriptTutorial |
 | 30 | JavaScript - Dinamik Kurs Projesi                               |                    |
-| 31 | JavaScript - Restful Api & AJAX                                 | RestpulApi_Ajax    |
+| 31 | JavaScript - Restful Api & AJAX                                 | RestfulApi_Ajax    |
 | 32 | JavaScript - Restful Api Projesi                                |                    |
 | 33 | JavaScript - JavaScript Modül Mantığını Anlama                  |                    |
 | 34 | JavaScript - JavaScript Modülleri ile Uygulama Çalışması        |                    |
@@ -113,6 +113,5 @@
 | 75 | Refactoring - Projenin Düzenlenmesi                             |                    |
 | 76 | Site Yayınlama-Hosting                                          |                    |
 | 77 | Asp.Net Core Web Api                                            |                    |
-| 78 | .Net Framework - Asp.Net Mvc 5                                  |                    |
+| 78 | .Net Framework - Asp.Net Mvc 5                                  |  NetFramework      |
 | 79 | Final                                                           |                    |
-
