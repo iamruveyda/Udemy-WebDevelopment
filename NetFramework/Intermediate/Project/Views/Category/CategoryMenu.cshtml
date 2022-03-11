@@ -1,0 +1,12 @@
+﻿@using Project.Models;
+
+@model List<CategoryModel>
+
+<div class="list-group">
+
+    @foreach (var kategori in Model) {
+        <a href="#" class="list-group-item">
+            @kategori.CategoryName
+        </a>
+    }
+</div>

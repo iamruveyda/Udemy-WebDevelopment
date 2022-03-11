@@ -1,0 +1,20 @@
+﻿@model Project.Models.ProductModel
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="row">
+
+    <div class="col-md-4">
+        <img src="~/img/@Model.Picture" />
+    </div>
+    <div class="col-md-8">
+        <h2 class="page-header">@Model.ProductName</h2>
+        <p>
+            @Model.ProductExplan
+        </p>
+        <p>
+            Price: @Model.Price 
+        </p>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "ProductList";
+}
+
+<h2>Product List</h2>
+<hr />
+
+<table class="table table-striped">
+
+    <thead>
+    <tr>
+        <th>Picture</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                <img src="~/img/@item.Picture" />
+            </td>
+            <td>@item.ProductName</td>
+            <td>@item.Price</td>
+            <td>
+                <a href="/Home/Details/@item.ProductId" class="btn btn-primary btn-xs">Detail</a>
+            </td>
+        </tr>
+
+    }
+    </tbody>
+
+</table>

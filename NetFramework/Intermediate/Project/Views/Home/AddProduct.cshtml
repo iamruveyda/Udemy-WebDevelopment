@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "AddProduct";
+}
+
+<h2>Product Add</h2>
+<hr />
+
+
+@using (Html.BeginForm("AddProduct" , "Home" , FormMethod.Post)) {
+    <div class="form-horizontal">
+
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="control-label col-md-3">Product Name</label>
+            <div class="col-md-9">
+                @Html.TextBox("ProductName" , null , new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="control-label col-md-3">Product Explanation</label>
+            <div class="col-md-9">
+                @Html.TextArea("ProductExplan" , null , new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="control-label col-md-3">Price</label>
+            <div class="col-md-9">
+                @Html.TextBox("Price" , null , new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="control-label col-md-3">Picture</label>
+            <div class="col-md-9">
+                @Html.TextBox("Picture" , null , new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="control-label col-md-3">Is it on sale?</label>
+            <div class="col-md-9">
+                Yes :  @Html.RadioButton("IsItOnSale" , true)
+                No : @Html.RadioButton("IsItOnSale" , false)
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+
+}
