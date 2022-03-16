@@ -32,7 +32,7 @@
 	      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
 - #### CSS FrameWork
-	- [Bootstrap][Bootstrap-git]  
+	- [Bootstrap][Bootstrap-git]    
 	  Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
 
 
@@ -52,23 +52,22 @@
 	  	MDN is one of the best resources to answer specific questions you may have about Javascript's features and functionality.
 
 - #### JavaScript Library
-	- [jQuery][jQueryJs]		
+	- [jQuery][jQueryJs]	    	
 	  jQuery is a JavaScript library designed to simplify event handling, CSS animation, and Ajax beyond HTML DOM tree traversal and manipulation.
 
 	  E.g. :
 	  
-	  	<script crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	    	<script crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" src="https://code.jquery.com/jquery-3.2.1.js"></script>
 		
-	- [Holder][HolderJs]					
+	- [Holder][HolderJs]    					
 	  An image is a placeholder. It renders the code as an image.
 
 	  E.g. :
 
-	  	<script src="holder.js"></script>
+	  	    <script src="holder.js"></script>
 
 [JavaScript-w3]: https://www.w3schools.com/js/
 [JavaScript-tutorialspoint]: https://www.tutorialspoint.com/javascript/index.htm
 [JavaScript-mozilla]: https://developer.mozilla.org/en-US/docs/Web/JavaScript?retiredLocale=tr
 [HolderJs]: https://github.com/imsky/holder
 [jQueryJs]: https://github.com/jquery/jquery
-  
