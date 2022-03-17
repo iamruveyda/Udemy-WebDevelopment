@@ -25,7 +25,7 @@
 ### CSS
 -  #### CSS Libraries
 	- [FontAwesome][FontAwesome-git]  
-	  Font Awesome is the Internet's icon library and toolkit, used by millions of designers, developers, and content creators.
+	 	Font Awesome is the Internet's icon library and toolkit, used by millions of designers, developers, and content creators.
 
 	  E.g. :
 
@@ -33,7 +33,7 @@
 
 - #### CSS FrameWork
 	- [Bootstrap][Bootstrap-git]    
-	  Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
+		Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
 
 
 
@@ -53,14 +53,14 @@
 
 - #### JavaScript Library
 	- [jQuery][jQueryJs]	    	
-	  jQuery is a JavaScript library designed to simplify event handling, CSS animation, and Ajax beyond HTML DOM tree traversal and manipulation.
+	  	jQuery is a JavaScript library designed to simplify event handling, CSS animation, and Ajax beyond HTML DOM tree traversal and manipulation.
 
 	  E.g. :
 	  
 	    	<script crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" src="https://code.jquery.com/jquery-3.2.1.js"></script>
 		
 	- [Holder][HolderJs]    					
-	  An image is a placeholder. It renders the code as an image.
+	 	An image is a placeholder. It renders the code as an image.
 
 	  E.g. :
 
