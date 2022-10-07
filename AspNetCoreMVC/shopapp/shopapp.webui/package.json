@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "ckeditor": "^4.12.1",
+    "datatables.net": "^1.12.1",
+	"jquery":"^3.6.0",
+    "jquery-validation": "^1.19.5",
+    "jquery-validation-unobtrusive": "^3.2.12"
+  }
+}

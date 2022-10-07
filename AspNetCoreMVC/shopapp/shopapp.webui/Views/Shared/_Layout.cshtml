@@ -1,0 +1,53 @@
+@* Komut dosyaları ve stil sayfaları gibi yaygın HTML yapıları da bir uygulama içindeki
+    birçok sayfa tarafından kullanılmaktadır. Bu paylaşılan öğelerin tümü, uygulama içinde kullanılan herhangi bir görünüm
+    tarafından başvurulabilecek bir düzen dosyasında tanımlanması sağlanmıştır. *@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/modules/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/css/Style.css">
+    <link rel="stylesheet" href="/modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+
+    @RenderSection("Css",false)
+    @* RenderSection, tanımlanan bölüme içerik enjekte etmek için kullanılır. Layout'ta bir bölge belirlemenizi sağlar*@
+
+    <title>Marvel Shop</title>
+</head>
+
+<body>
+
+    @await Html.PartialAsync("_navbar")
+
+    <main class="my-3">
+        <div class="container">
+
+            @if (TempData["message"] != null)
+            {
+                <partial name="_ResultMessage" model="@(TempData.Get<AlertMessage>("message"))" />
+            }
+
+            @RenderBody()
+            @* RenderBody; alt görünümün içeriğini oluşturmak için kullanılır. Düzen sayfalarında, içerik sayfasının bir
+                bölümünü oluşturur. *@
+        </div>
+    </main>
+
+    <footer class="py-5 bg-dark text-white text-center">
+        Marvel Shop
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    @RenderSection("Scripts",false)
+</body>
+
+</html>
+
+
+@* https://docs.microsoft.com/en-us/aspnet/core/mvc/views/layout?view=aspnetcore-6.0 *@

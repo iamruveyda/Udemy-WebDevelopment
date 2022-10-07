@@ -1,0 +1,67 @@
+<div class="navbar navbar-dark bg-dark navbar-expand-sm">
+
+    <div class="container">
+        <a href="/" class="navbar-brand">Marvel Shop</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="/products" class="nav-link">Ürünler</a>
+            </li>
+
+            @if (User.Identity.IsAuthenticated)
+            {
+
+                if (User.IsInRole("admin"))
+                {
+                    <li class="nav-item">
+                        <a href="/admin/products" class="nav-link">Ürün Yönetme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/categories" class="nav-link">Kategori Düzenleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/role/list" class="nav-link">Rol Listesi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/user/list" class="nav-link">Kullanıcılar</a>
+                    </li>
+                }
+            }
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li class="nav-item">
+                    <a href="/cart" class="nav-link">Sepetim</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/orders" class="nav-link">Siparişlerim</a>
+                </li>
+
+
+                /*Manage (account/manage) Sayfası yapılmadı*/
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        @User.Identity.Name
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/account/logout" class="nav-link">Oturumu Kapat</a>
+                </li>
+            }
+            else
+            {
+
+                <li class="nav-item">
+                    <a href="/account/login" class="nav-link">Giriş</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/account/register" class="nav-link">Kayıt Ol</a>
+                </li>
+            }
+        </ul>
+
+    </div>
+</div>

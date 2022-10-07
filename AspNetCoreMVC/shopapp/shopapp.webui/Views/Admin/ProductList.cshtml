@@ -1,0 +1,96 @@
+@model ProductListViewModel
+
+@* Ürün Yönetme
+    Yönetici Sayfası Ürün Düzenleme Sayfası *@
+
+@section Css
+{
+
+<link rel="stylesheet" href="/css/dataTables.bootstrap4.min.css">
+
+}
+
+@section Scripts
+{
+
+<script type="text/javascript" src="@Url.Content("~/js/jquery.dataTables.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/js/dataTables.bootstrap4.min.js")"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>
+
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="h3">Yönetici Sayfası Ürün Düzenleme</h1>
+        <hr>
+        <a class="btn btn-primary btn-sm" href="ProductCreate">Ürün Oluştur</a>
+        <hr>
+        <table data-page-length='5' id="myTable" class="table table-bordered mt-3">
+            <thead>
+                <tr>
+                    <td style="width: 30px;">No</td>
+                    <td style="width: 100px;">Resim</td>
+                    <td style="width: 100px;">Ürün İsmi</td>
+                    <td style="width: 20px;">Ücret</td>
+                    <td style="width: 20px;">Anasayfa Görünürlüğü</td>
+                    <td style="width: 10px;">Onaylı</td>
+                    <td style="width: 60px;"></td>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Products.Count > 0)
+                {
+                    @foreach (var item in Model.Products)
+                    {
+                        <tr>
+                            <td>@item.ProductId</td>
+                            <td><img src="~/img/@item.ImageUrl" width="80"></td>
+                            <td>@item.Name</td>
+                            <td>@item.Price</td>
+                            <td>
+                                @if (item.IsHome)
+                                {
+                                    <i class="fa-solid fa-square-check"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa-solid fa-square-xmark"></i>
+                                }
+                            </td>
+                            <td>
+                                @if (item.IsApproved)
+                                {
+                                    <i class="fa-solid fa-square-check"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa-solid fa-square-xmark"></i>
+                                }
+                            </td>
+                            <td>
+                                <a href="/admin/products/@item.ProductId" class="btn btn-primary btn-sm mr-2">Düzenle</a>
+
+                                <form action="/admin/deleteproduct" method="POST" style="display: inline;">
+                                    <input type="hidden" name="productId" value="@item.ProductId">
+                                    <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <div class="alert alert-warning">
+                        <h3>Ürün bulunmamaktadır.</h3>
+                    </div>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>

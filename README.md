@@ -1,38 +1,25 @@
-<a href="https://www.udemy.com/">
-<img width="150" alt="Udemy" src="https://raw.githubusercontent.com/iamruveyda/img/main/Logo/udemy2_logo.png" >
-</a>
-
-
-
 # (120+ Hours) Web Development Course
 
 <div align="center">
-    <a> <img height="50" title="HTML5" src="https://raw.githubusercontent.com/iamruveyda/img/a9f89176668abc1bcf4d4aa0e22e8370e66b1753/Languages%20and%20Tools/html5.svg"/></a>
-    <a> <img height="50" title="CSS" src="https://raw.githubusercontent.com/iamruveyda/img/a9f89176668abc1bcf4d4aa0e22e8370e66b1753/Languages%20and%20Tools/css.svg"/></a>
-    <a> <img height="50" title="JavaScript" src="https://raw.githubusercontent.com/iamruveyda/img/c0afbbf42cbb9e931984701107180cbea3d3c062/Languages%20and%20Tools/javascript.svg"/></a>
-</div>
-
-<div align="center">
-   <a href="https://github.com/iamruveyda/Udemy-WebDevelopment/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/iamruveyda/Udemy-WebDevelopment"></a>
    <a><img alt="Code Size" src="https://img.shields.io/github/languages/code-size/iamruveyda/Udemy-WebDevelopment"></a>
    <a><img alt="Repo Size" src="https://img.shields.io/github/repo-size/iamruveyda/Udemy-WebDevelopment"></a>
 </div>
 
 
 | Name                                                                                            | Language |
-|-------------------------------------------------------------------------------------------------|----------|
+| ----------------------------------------------------------------------------------------------- | -------- |
 | [(120+ Hours) Web Development Course](https://www.udemy.com/course/komple-web-developer-kursu/) | Turkish  |
-
 
 ## Instructor
 
- [Sadık E. Turan]()
+[Sadık E. Turan]()
 
 ### Resources | Useful Links
 
 [resources.md](https://github.com/iamruveyda/Udemy-WebDevelopment/blob/main/resources.md)
 
 <hr>
+
 
 | Id | Chapters                                                        | Folder             |
 |----|-----------------------------------------------------------------|--------------------|
@@ -65,7 +52,7 @@
 | 27 | JavaScript - Hata Yönetimi                                      | JavaScriptTutorial |
 | 28 | JavaScript - Quiz Uygulaması (Proje3)                           | JavaScriptDom      |
 | 29 | JavaScript - Modern JavaScript Teknikleri ES6+/ES7              | JavaScriptTutorial |
-| 30 | JavaScript - Dinamik Kurs Projesi                               |                    |
+| 30 | JavaScript - Dinamik Kurs Projesi                               | JavaScriptDom      |
 | 31 | JavaScript - Restful Api & AJAX                                 | RestfulApi_Ajax    |
 | 32 | JavaScript - Restful Api Projesi                                |                    |
 | 33 | JavaScript - JavaScript Modül Mantığını Anlama                  |                    |
@@ -98,20 +85,20 @@
 | 60 | SQL - İleri Seviye SQL Sorguları                                |                    |
 | 61 | .Net Core - Veri Tabanı ile Çalışma - SQL Server & MySQL Server |                    |
 | 62 | .Net Core - ORM - Entity Framework Core                         |                    |
-| 63 | Asp.Net Core Mvc - Temel Özellikler                             |                    |
-| 64 | Asp.Net Core Mvc - Dinamik Veri ile Çalışma                     |                    |
-| 65 | Asp.Net Core Mvc - Form ile Çalışma                             |                    |
-| 66 | Asp.Net Core Mvc - E-Ticaret Proje Yapısının Kurulması          |                    |
-| 67 | Asp.Net Core Mvc - Kullanıcı Sayfalarının Oluşturulması         |                    |
-| 68 | Asp.Net Core Mvc - Admin Sayfalarının Oluşturulması             |                    |
-| 69 | Asp.Net Core Mvc - Validation                                   |                    |
-| 70 | Asp.Net Core Mvc - Resim Upload & Html Editör                   |                    |
-| 71 | Asp.Net Core Mvc - Üyelik İşlemleri - Asp.net Core Identity     |                    |
-| 72 | Asp.Net Core Mvc - Üyelik Yönetimi - Asp.net Core Identity      |                    |
-| 73 | Asp.Net Core Mvc - Alışveriş Sepeti                             |                    |
-| 74 | Asp.Net Core Mvc - Sipariş Süreci & Kredi Kartı Entegrasyonu    |                    |
-| 75 | Refactoring - Projenin Düzenlenmesi                             |                    |
+| 63 | Asp.Net Core Mvc - Temel Özellikler                             | AspNetCoreMVC      |
+| 64 | Asp.Net Core Mvc - Dinamik Veri ile Çalışma                     | AspNetCoreMVC      |
+| 65 | Asp.Net Core Mvc - Form ile Çalışma                             | AspNetCoreMVC      |
+| 66 | Asp.Net Core Mvc - E-Ticaret Proje Yapısının Kurulması          | AspNetCoreMVC      |
+| 67 | Asp.Net Core Mvc - Kullanıcı Sayfalarının Oluşturulması         | AspNetCoreMVC      |
+| 68 | Asp.Net Core Mvc - Admin Sayfalarının Oluşturulması             | AspNetCoreMVC      |
+| 69 | Asp.Net Core Mvc - Validation                                   | AspNetCoreMVC      |
+| 70 | Asp.Net Core Mvc - Resim Upload & Html Editör                   | AspNetCoreMVC      |
+| 71 | Asp.Net Core Mvc - Üyelik İşlemleri - Asp.net Core Identity     | AspNetCoreMVC      |
+| 72 | Asp.Net Core Mvc - Üyelik Yönetimi - Asp.net Core Identity      | AspNetCoreMVC      |
+| 73 | Asp.Net Core Mvc - Alışveriş Sepeti                             | AspNetCoreMVC      |
+| 74 | Asp.Net Core Mvc - Sipariş Süreci & Kredi Kartı Entegrasyonu    | AspNetCoreMVC      |
+| 75 | Refactoring - Projenin Düzenlenmesi                             | AspNetCoreMVC      |
 | 76 | Site Yayınlama-Hosting                                          |                    |
 | 77 | Asp.Net Core Web Api                                            |                    |
-| 78 | .Net Framework - Asp.Net Mvc 5                                  |  NetFramework      |
+| 78 | .Net Framework - Asp.Net Mvc 5                                  | NetFramework       |
 | 79 | Final                                                           |                    |

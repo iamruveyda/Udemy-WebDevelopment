@@ -1,0 +1,97 @@
+@model IEnumerable<User>
+
+@section Css
+{
+
+<link rel="stylesheet" href="/css/dataTables.bootstrap4.min.css">
+
+}
+
+@section Scripts
+{
+
+<script type="text/javascript" src="@Url.Content("~/js/jquery.dataTables.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/js/dataTables.bootstrap4.min.js")"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>
+
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="h3">Kullanıcı Listesi</h1>
+        <hr>
+        @* <a class="btn btn-primary btn-sm" href="/admin/user/create">Yeni Kullanıcı Oluştur</a> *@
+        <hr>
+        <table data-page-length='3' id="myTable" class="table table-bordered mt-3">
+            <thead>
+                <tr>
+                    <td>Adı</td>
+                    <td>Soyadı</td>
+                    <td>Kullanıcı Adı</td>
+                    <td>E-Posta</td>
+                    <td>E-Posta Onaylanması</td>
+                    <td style="width: 160px;"></td>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Count() > 0)
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr class="@(item.EmailConfirmed?"":"bg-warning")">
+                            <td>@item.FirstName</td>
+                            <td>@item.LastName</td>
+                            <td>@item.UserName</td>
+                            <td>@item.Email</td>
+
+                            <td>
+                                @if (item.EmailConfirmed)
+                                {
+                                    <i class="fa-solid fa-user-check"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa-solid fa-user-xmark"></i>
+                                }
+                            </td>
+                            <td>
+                                <a href="/admin/user/@item.Id" class="btn btn-primary btn-sm mr-2">Düzenle</a>
+
+
+
+                                @* <form action="/admin/user/delete" method="POST" style="display: inline;">
+                                    <input type="hidden" name="UserId" value="@item.Id">
+                                    <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                                    </form> *@
+
+                                @* <form action="/Admin/Delete/@user.Id" method="post">
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form> *@
+
+                                @* <form action="/admin/deleteuser" method="POST" style="display: inline;">
+                                    <input type="hidden" name="userId" value="@item.UserId">
+                                    <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                                    </form> *@
+
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <div class="alert alert-warning">
+                        <h3>Kullanıcı bulunmamaktadır.</h3>
+                    </div>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>

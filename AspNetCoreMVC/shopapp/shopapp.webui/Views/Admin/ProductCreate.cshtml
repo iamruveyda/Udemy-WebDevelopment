@@ -1,0 +1,76 @@
+@model ProductModel
+
+@* Ürün Oluşturma Sayfası *@
+
+@* "Ürün Yönetme -> Yönetici Sayfası Ürün Düzenleme -> Ürün Oluştur Butonu Sayfası " *@
+
+@section Scripts
+{
+<script src="/modules/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+<script src="/modules/ckeditor/ckeditor.js"></script>
+
+<script>
+    CKEDITOR.replace('editor');
+</script>
+
+}
+
+<h1 class="h3">Ürün Oluştur</h1>
+<hr>
+
+<div class="row">
+    <div class="col-md-8">
+        <form asp-controller="Admin" asp-action="ProductCreate" method="POST">
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="form-group row">
+                <label asp-for="Name" class="col-sm-2 col-form-label">Ürün İsmi</label>
+                <div class="col-sm-10">
+                    <input class="form-control" asp-for="Name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label asp-for="Url" class="col-sm-2 col-form-label">Ürün Bağlantı Adresi</label>
+                <div class="col-sm-10">
+                    <input class="form-control" asp-for="Url">
+                    <span asp-validation-for="Url" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label asp-for="Description" class="col-sm-2 col-form-label">Ürün Detayı</label>
+                <div class="col-sm-10">
+                    <textarea id="editor" class="form-control" asp-for="Description"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label asp-for="Price" class="col-sm-2 col-form-label">Fiyatı</label>
+                <div class="col-sm-10">
+                    <input class="form-control" asp-for="Price">
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+            </div>
+
+            @* Bu aşağıdaki kısım resim ekleme yeri// Dosya Yüklemeli olarak yapılmalı *@
+
+            @* <div class="form-group row">
+                <label asp-for="ImageUrl" class="col-sm-2 col-form-label">Ürün Resmi</label>
+                <div class="col-sm-10">
+                <input class="form-control" asp-for="ImageUrl">
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                </div>
+                </div> *@
+
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Ürünü Kaydet</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
